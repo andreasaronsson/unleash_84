@@ -22,6 +22,15 @@
     <module>api</module>
     <module>consumer</module>
   </modules>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.example</groupId>
+        <artifactId>api</artifactId>
+        <version>1-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <build>
     <pluginManagement>
       <plugins>
@@ -127,13 +136,4 @@
       </plugins>
     </pluginManagement>
   </build>
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>com.example</groupId>
-        <artifactId>api</artifactId>
-        <version>1-SNAPSHOT</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 </project>
